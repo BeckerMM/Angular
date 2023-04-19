@@ -1,16 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule , EventEmitter} from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { BotaoModule } from './botao/botao.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BotaoModule
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BotaoModule
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+
+  }
+
